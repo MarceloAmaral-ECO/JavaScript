@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de porcentagem</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculando Porcentagem</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <p>Preço: <input type="number" name="preço" id="preco"></p>
+            <p>Porcentagem: <input type="number" name="porc" id="porc"></p>
+            <p>Valor Final: <input type="number" name="vlfinal" id="vlfinal"></p>
+            <p>==========================================</p>
+            <p id="escolhaop"><label for="soma">Soma</label><input type="radio" name="operacao" id="soma" checked>&nbsp;&nbsp;<label for="sub">Subtração</label><input type="radio" name="operacao" id="sub"></p>
+            <p>==========================================</p>
+            <p><button value="Contar" onclick="calcular()">Calcular</button>&nbsp;&nbsp;<input type="reset" value="Limpar" onclick="limpar()"></p>
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="scripts/porcentagem.js"></script>
+</body>
+</html>
